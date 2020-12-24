@@ -1,3 +1,10 @@
 @import "functions";
 @import "./helpers/variables";
 @import "bootstrap";
+
+@import "helpers/mixins";
+@import "helpers/utilities";
+@import "base/base";
+@import "layout/mainMenu";
+@import "components/nav";
+@import "components/navbar";
