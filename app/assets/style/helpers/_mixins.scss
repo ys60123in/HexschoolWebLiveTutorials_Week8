@@ -1,0 +1,43 @@
+@mixin pc {
+	@media (min-width: 992px) {
+		@content;
+	}
+}
+
+@mixin pad {
+	@media (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin link-with-background($width, $height, $url){
+	width: $width;
+	height: $height;
+	display: block;
+	background: url($url) no-repeat center;
+	text-indent: 101%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+@mixin left-side-image($width, $height, $url, $margin-right, $vertical-align: middle){
+	content: "";
+	display: inline-block;
+	width: $width;
+	height: $height;
+	background: url($url) no-repeat;
+	background-size: contain;
+	margin-right: $margin-right;
+	vertical-align: $vertical-align;
+}
+
+@mixin right-side-image($width, $height, $url, $margin-left, $vertical-align: middle){
+	content: "";
+	display: inline-block;
+	width: $width;
+	height: $height;
+	background: url($url) no-repeat;
+	background-size: contain;
+	margin-left: $margin-left;
+	vertical-align: $vertical-align;
+}
