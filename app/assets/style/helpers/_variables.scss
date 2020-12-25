@@ -151,6 +151,12 @@ $spacers: map-merge(
     8: ($spacer * 2),
     9: ($spacer * 2.25),
     10: ($spacer * 2.5),
+    11: ($spacer * 3),    //48
+    12: ($spacer * 3.5),  //56
+    13: ($spacer * 3.75), //60
+    15: ($spacer * 4),    //64
+    16: ($spacer * 5),    //80
+    17: ($spacer * 6.25), //100
   ),
   $spacers
 );
@@ -288,6 +294,23 @@ $font-family-base:            $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
 
 $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+//參考 https://github.com/chiayutsai/perfume/blob/main/app/assets/style/helpers/_variables.scss 新增
+$font-size: () !default;
+$font-size: map-merge(
+  (
+    'xs': ($font-size-base * 0.75),
+    'sm': ($font-size-base * 0.875),
+    'base': $font-size-base,
+    'lg': ($font-size-base * 1.25),
+    'xl' :($font-size-base * 1.5),
+    '2xl': ($font-size-base * 1.75),
+    '3xl': ($font-size-base * 2),
+    '4xl':($font-size-base * 2.5),
+    '5xl':($font-size-base * 3),
+  ),
+  $font-size
+);
+
 $font-size-lg:                $font-size-base * 1.25 !default;
 $font-size-sm:                $font-size-base * .875 !default;
 $font-size-extreme-sm:        $font-size-base * .75 !default;
