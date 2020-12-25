@@ -15,3 +15,7 @@ img{
     height: auto;
     object-fit: cover;
 }
+
+a:hover{
+    font-weight: $font-weight-medium !important;
+}
