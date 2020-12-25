@@ -1,0 +1,21 @@
+.navbar-nav{
+    .nav-item{
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #DEDEDE;
+    }
+    .nav-link{
+        font-size: $font-size-lg;
+        font-weight: $font-weight-medium;
+    }
+    @include pad{
+        .nav-item{
+            width: auto;
+            border: none;
+        }
+        .nav-link{
+            font-size: $font-size-base;
+            font-weight: $font-weight-normal;
+        }
+    }
+}
