@@ -18,3 +18,23 @@
         top: 256px;
     }
 }
+
+.reserved-block{
+    height: 132px;
+    @include pad{
+        height: 210px;
+    }
+    @include pc{
+        height: 350px;
+    }
+}
+
+.reserved-block-half{
+    height: 132px;
+    @include pad{
+        height: 103px;
+    }
+    @include pc{
+        height: 173px;
+    }
+}
