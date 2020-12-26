@@ -1,36 +1,38 @@
 <!-- 主選單 -->
-<nav class="container navbar navbar-expand-md sticky-top bg-white">
-    <h1 class="mb-0 mx-auto"><a href="index.html" class="logo">PETPET</a></h1>
-    <button class="navbar-toggler outline-0 position-absolute right-0 top-0" type="button" data-toggle="collapse" data-target="#navbarMainMenu" aria-controls="navbarMainMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon material-icons h2 mb-0 text-secondary">menu</span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarMainMenu">
-        <ul class="navbar-nav w-100 align-items-center justify-content-md-end">
-            <li class="nav-item">
-                <a class="nav-link" href="#">預約服務</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">成為寵物保姆</a>
-            </li>
-            <% if (title === "PETPET - 會員中心") { %>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProfile" role="button" data-toggle="dropdown"
-                      aria-haspopup="true" aria-expanded="false">
-                      Hi, Joanne
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
-                        <li><a class="dropdown-item text-center text-md-left" href="#">會員資料</a></li>
-                        <li><a class="dropdown-item text-center text-md-left" href="#">預約查詢</a></li>
-                        <li><a class="dropdown-item text-center text-md-left" href="#">歷史預約</a></li>
-                        <li class="dropdown-divider"></li>
-                        <li><a class="dropdown-item text-primary-light text-center text-md-left" href="#">切換保母帳號</a></li> 
-                    </ul>
-                </li>
-            <% } else { %>
+<div class="sticky-top bg-white">
+    <nav class="container navbar navbar-expand-md">
+        <h1 class="mb-0 mx-auto"><a href="index.html" class="logo">PETPET</a></h1>
+        <button class="navbar-toggler outline-0 position-absolute right-0 top-0" type="button" data-toggle="collapse" data-target="#navbarMainMenu" aria-controls="navbarMainMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon material-icons h2 mb-0 text-secondary">menu</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMainMenu">
+            <ul class="navbar-nav w-100 align-items-center justify-content-md-end">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">登入</a>
+                    <a class="nav-link" href="#">預約服務</a>
                 </li>
-            <% } %>
-        </ul>
-    </div>
-</nav>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">成為寵物保姆</a>
+                </li>
+                <% if (title === "PETPET - 會員中心") { %>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProfile" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Hi, Joanne
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
+                            <li><a class="dropdown-item text-center text-md-left" href="#">會員資料</a></li>
+                            <li><a class="dropdown-item text-center text-md-left" href="#">預約查詢</a></li>
+                            <li><a class="dropdown-item text-center text-md-left" href="#">歷史預約</a></li>
+                            <li class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-primary-light text-center text-md-left" href="#">切換保母帳號</a></li> 
+                        </ul>
+                    </li>
+                <% } else { %>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">登入</a>
+                    </li>
+                <% } %>
+            </ul>
+        </div>
+    </nav>
+</div>
