@@ -6,8 +6,48 @@ current: index
 ---
 
 <!-- 標語 -->
-<header class="container pt-lg-15 pt-md-">
-    
+<header class="container pt-lg-15 pt-md-14 pt-0 mb-lg-13 mb-md-14 mb-0">
+    <div class="row">
+        <div class="col-lg-8 col-md-7 order-md-1 mb-3 mb-md-0">
+            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/petpet-week8/homestay-1.png?raw=true" alt="">
+        </div>
+        <div class="col-lg-4 col-md-5 d-flex flex-column justify-content-center align-items-center align-items-md-start">
+            <h2 class="text-primary text-md-4xl text-2xl mb-lg-4 mb-md-2 mb-1">寵物寄宿</h2>
+            <p class="lead text-md-xl text-primary mb-3">給您的毛孩最舒適的環境</p>
+        </div>
+    </div>
 </header>
 
-<!-- 預約篩選區塊 -->
+<main>
+    <!-- 預約篩選區塊 -->
+    <section class="bg-secondary py-4 mb-lg-16 mb-14">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-lg-1 col-md-2 col-3 mb-2 mb-md-0 mr-4 mr-md-2">
+                    <select name="category" id="selectCategory" class="form-control pl-4 pr-2">
+                        <option value="" selected disabled>品種</option>
+                        <option value="cat">貓</option>
+                        <option value="dog">狗</option>
+                    </select>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 mb-2 mb-md-0 mr-4 mr-md-2">
+                    <select name="city" id="selectCity" class="form-control pl-4 pr-2">
+                        <option value="" selected disabled>城市</option>
+                        <option value="0">高雄市</option>
+                        <option value="1">台南市</option>
+                        <option value="2">台中市</option>
+                        <option value="3">台北市</option>
+                    </select>
+                </div>
+                <div class="col-md-3 col-6 pr-md-2 pr-4 d-flex align-items-center">
+                    <input type="text" name="from_date" id="inputFromDate" class="form-control pl-4 pr-2 datepicker">
+                </div>
+                <p class="d-none d-md-block my-auto mr-4 mr-md-2">至</p>
+                <div class="col-md-3 col-6">
+                    <input type="text" name="to_date" id="inputToDate" class="form-control pl-4 pr-2 datepicker">
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
