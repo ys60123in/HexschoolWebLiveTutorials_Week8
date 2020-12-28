@@ -22,6 +22,11 @@ $(function() {
   const tomorrowDateString = tomorrow.getFullYear() + "/" + paddingLeft(String(tomorrow.getMonth() + 1), 2) + "/" + paddingLeft(String(tomorrow.getDate()), 2);
   $("#inputFromDate").val(todayDateString);
   $("#inputToDate").val(tomorrowDateString);
+
+  $("#linkListPetPhotos a").on("click", function(){
+    $(".display-board").attr("src", $(this).attr('href'));
+    return false;
+  });
 });
 
 var swiper = new Swiper('.swiper-container', {

@@ -106,3 +106,15 @@
 .hover-bg-gray-200:hover{
     background: $gray-200;
 }
+
+.hover-opacity-50:hover{
+    opacity: 0.5;
+}
+
+.lg-sticky-top{
+    @include pc{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+}

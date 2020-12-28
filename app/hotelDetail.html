@@ -1,0 +1,106 @@
+---
+title: PETPET - 店家介紹
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<main class="container">
+    <div class="row">
+        <!-- 店家資訊 -->
+        <div class="col-lg-6 col-md-7 order-md-0 order-1 lg-sticky-top pt-lg-16 pt-md-14 pt-10 mb-lg-16 mb-md-14 mb-10">
+            <div class="d-flex align-items-center mb-4">
+                <h2 class="h3 text-primary mr-4">毛孩好家</h2>
+                <p class="text-secondary mb-0">
+                    <span class="material-icons">grade</span>
+                    <span class="material-icons">grade</span>
+                    <span class="material-icons">grade</span>
+                    <span class="material-icons">grade</span>
+                    <span class="material-icons">grade</span>
+                </p>
+            </div>
+            <h3 class="h5 text-primary font-weight-medium mb-lg-2 mb-3">給予毛孩最舒適的環境是我們的職責！</h3>
+            <p class="text-primary font-weight-medium mb-lg-14 mb-7">已提供 52 筆服務、並獲得 30 個評價</p>
+            <h3 class="h6 text-primary mb-lg-4 mb-3">服務內容</h3>
+            <ul class="list-unstyled">
+                <li>
+                    <p class="text-primary font-weight-medium mb-2">寄宿 NT$ 450 /晚</p>
+                </li>
+                <li>
+                    <p class="text-primary font-weight-medium mb-0">美容洗澡 NT$ 500 （含剪指甲、剃腳底毛、清耳朵）</p>
+                    <p class="text-primary-light font-weight-medium text-sm mb-2">個性貓另加價</small>
+                </li>
+                <li>
+                    <p class="text-primary font-weight-medium mb-lg-10 mb-7">到府保姆 NT$ 550 /晚</p>
+                </li>
+            </ul>
+            <div class="d-flex mb-lg-14 mb-7">
+                <p class="mb-0 text-primary-light mr-2"><span class="material-icons">location_on</span></p>
+                <p class="text-primary font-weight-medium mb-0">高雄市鹽埕區七賢三路123號<br>服務區域：高雄市 全區</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-5 col-6">
+                    <a href="#" class="btn btn-outline-primary-light d-block text-lg">聯繫</a>
+                </div>
+                <div class="col-lg-6 col-md-5 col-6">
+                    <a href="#" class="btn btn-primary-light d-block text-lg">立刻預約</a>
+                </div>
+            </div>
+        </div>
+        <!-- 店家相片展示 -->
+        <div class="col-lg-6 col-md-5 pt-lg-16 pt-md-14 pt-10">
+            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/petpet-week8/homestay-3.jpeg?raw=true" class="display-board w-100 rounded mb-2 mb-md-3" alt="...">
+            <ul id="linkListPetPhotos" class="list-group list-group-horizontal row no-gutters">
+                <li class="list-group-item p-0 pr-lg-2 pr-1 border-0 col-lg-2 col-3">
+                    <a href="https://github.com/hexschool/webLayoutTraining1st/blob/master/petpet-week8/homestay-3.jpeg?raw=true" class="d-block hover-opacity-50">
+                        <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/petpet-week8/homestay-3.jpeg?raw=true" class="d-block rounded w-100 display-link-img" alt="...">
+                    </a>
+                </li>
+                <li class="list-group-item p-0 pr-lg-2 pr-1 border-0 col-lg-2 col-3">
+                    <a href="https://github.com/hexschool/webLayoutTraining1st/blob/master/petpet-week8/index-5.jpeg?raw=true" class="d-block hover-opacity-50">
+                        <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/petpet-week8/index-5.jpeg?raw=true" class="d-block rounded w-100 display-link-img" alt="...">
+                    </a>
+                </li>
+                <li class="list-group-item p-0 pr-lg-2 pr-1 border-0 col-lg-2 col-3">
+                    <a href="https://github.com/hexschool/webLayoutTraining1st/blob/master/petpet-week8/detail-1.jpeg?raw=true" class="d-block hover-opacity-50">
+                        <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/petpet-week8/detail-1.jpeg?raw=true" class="d-block rounded w-100 display-link-img" alt="...">
+                    </a>
+                </li>
+                <li class="list-group-item p-0 border-0 col-lg-2 col-3">
+                    <a href="https://github.com/hexschool/webLayoutTraining1st/blob/master/petpet-week8/detail2.jpeg?raw=true" class="d-block hover-opacity-50">
+                        <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/petpet-week8/detail2.jpeg?raw=true" class="d-block rounded w-100 display-link-img" alt="...">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 店家詳細介紹 -->
+        <div class="col-lg-6 offset-lg-6 col-md-7 pt-lg-17 order-1">
+            <ul class="list-unstyled">
+                <li class="mb-lg-10 mb-md-7 mb-5">
+                    <h3 class="h5 text-primary mb-3">關於</h3>
+                    <p class="text-lg-lg text-base font-weight-medium text-primary">家中有5隻貓寶貝，對貓咪有瘋狂的熱愛 。<br>目前已經照顧超過30位狗狗貓咪朋友！對於我來說，能夠與你們相遇都是緣分！</p>
+                </li>
+                <li class="mb-lg-10 mb-md-7 mb-5">
+                    <h3 class="h5 text-primary mb-3">經歷</h3>
+                    <p class="text-lg-lg text-base font-weight-medium text-primary">曾接手過數次奶貓，照顧後送養成功，目前都是健健康康的毛孩。</p>
+                </li>
+                <li class="mb-lg-10 mb-md-7 mb-5">
+                    <h3 class="h5 text-primary mb-3">技能證照</h3>
+                    <p class="text-lg-lg text-base font-weight-medium text-primary">寵物美容丙級技術證</p>
+                </li>
+                <li class="mb-lg-10 mb-md-7 mb-5">
+                    <h3 class="h5 text-primary mb-3">提供</h3>
+                    <p class="text-lg-lg text-base font-weight-medium text-primary">貓砂盆、罐頭、乾飼料</p>
+                </li>
+                <li class="mb-lg-10 mb-md-7 mb-5">
+                    <h3 class="h5 text-primary mb-3">毛孩活動範圍</h3>
+                    <p class="text-lg-lg text-base font-weight-medium text-primary">想去的任何地方</p>
+                </li>
+                <li class="mb-lg-10 mb-md-7 mb-5">
+                    <h3 class="h5 text-primary mb-3">服務地區</h3>
+                    <p class="text-lg-lg text-base font-weight-medium text-primary">高雄市</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</main>
