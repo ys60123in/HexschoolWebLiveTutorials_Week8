@@ -102,6 +102,12 @@
     bottom: 48px;
 }
 
+.stretched-link-md-bottom-0::after{
+    @include pad{
+        bottom: 0;
+    }
+}
+
 .stretched-link-hover:hover::after{
     background: #000;
     opacity: 0.1;
@@ -114,4 +120,29 @@
 
 .hover-bg-gray-200:hover{
     background: $gray-200;
+}
+
+.hover-opacity-50:hover{
+    opacity: 0.5;
+}
+
+.lg-sticky-top{
+    @include pc{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+}
+
+.lg-no-gutters {
+    @include pc{
+        margin-right: 0;
+        margin-left: 0;
+      
+        > .col,
+        > [class*="col-"] {
+          padding-right: 0;
+          padding-left: 0;
+        }
+    }
 }
