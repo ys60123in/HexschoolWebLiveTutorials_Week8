@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <title>PETPET - 店家介紹</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <!-- 主選單 -->
+<div class="sticky-top bg-white">
+    <nav class="container navbar navbar-expand-md">
+        <h1 class="mb-0 mx-auto"><a href="index.html" class="logo">PETPET</a></h1>
+        <button class="navbar-toggler outline-0 position-absolute right-0 top-0" type="button" data-toggle="collapse" data-target="#navbarMainMenu" aria-controls="navbarMainMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon material-icons h2 mb-0 text-secondary">menu</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMainMenu">
+            <ul class="navbar-nav w-100 align-items-center justify-content-md-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">預約服務</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">成為寵物保姆</a>
+                </li>
+                
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">登入</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </nav>
+</div>
+    
+    
+<main class="container">
+    <div class="row">
+        <!-- 店家資訊 -->
+        <section class="col-lg-6 col-md-7 order-md-0 order-1 lg-sticky-top pt-lg-16 pt-md-14 pt-10 mb-lg-16 mb-md-14 mb-10">
+            <div class="d-flex align-items-center mb-4">
+                <h2 class="h3 text-primary mr-4">毛孩好家</h2>
+                <p class="text-secondary mb-0">
+                    <span class="material-icons">grade</span>
+                    <span class="material-icons">grade</span>
+                    <span class="material-icons">grade</span>
+                    <span class="material-icons">grade</span>
+                    <span class="material-icons">grade</span>
+                </p>
+            </div>
+            <h3 class="h5 text-primary font-weight-medium mb-lg-2 mb-3">給予毛孩最舒適的環境是我們的職責！</h3>
+            <p class="text-primary font-weight-medium mb-lg-14 mb-7">已提供 52 筆服務、並獲得 30 個評價</p>
+            <h3 class="h6 text-primary mb-lg-4 mb-3">服務內容</h3>
+            <ul class="list-unstyled">
+                <li>
+                    <p class="text-primary font-weight-medium mb-2">寄宿 NT$ 450 /晚</p>
+                </li>
+                <li>
+                    <p class="text-primary font-weight-medium mb-0">美容洗澡 NT$ 500 （含剪指甲、剃腳底毛、清耳朵）</p>
+                    <p class="text-primary-light font-weight-medium text-sm mb-2">個性貓另加價</small>
+                </li>
+                <li>
+                    <p class="text-primary font-weight-medium mb-lg-10 mb-7">到府保姆 NT$ 550 /晚</p>
+                </li>
+            </ul>
+            <div class="d-flex mb-lg-14 mb-7">
+                <p class="mb-0 text-primary-light mr-2"><span class="material-icons">location_on</span></p>
+                <p class="text-primary font-weight-medium mb-0">高雄市鹽埕區七賢三路123號<br>服務區域：高雄市 全區</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-5 col-6">
+                    <a href="#" class="btn btn-outline-primary-light d-block text-lg">聯繫</a>
+                </div>
+                <div class="col-lg-6 col-md-5 col-6">
+                    <a href="#" class="btn btn-primary-light d-block text-lg">立刻預約</a>
+                </div>
+            </div>
+        </section>
+        <!-- 店家相片展示 -->
+        <section class="col-lg-6 col-md-5 pt-lg-16 pt-md-14 pt-10">
+            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/petpet-week8/homestay-3.jpeg?raw=true" class="display-board w-100 rounded mb-2 mb-md-3" alt="...">
+            <ul id="linkListPetPhotos" class="list-group list-group-horizontal row no-gutters">
+                <li class="list-group-item p-0 pr-lg-2 pr-1 border-0 col-lg-2 col-3">
+                    <a href="https://github.com/hexschool/webLayoutTraining1st/blob/master/petpet-week8/homestay-3.jpeg?raw=true" class="d-block hover-opacity-50">
+                        <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/petpet-week8/homestay-3.jpeg?raw=true" class="d-block rounded w-100 display-link-img" alt="...">
+                    </a>
+                </li>
+                <li class="list-group-item p-0 pr-lg-2 pr-1 border-0 col-lg-2 col-3">
+                    <a href="https://github.com/hexschool/webLayoutTraining1st/blob/master/petpet-week8/index-5.jpeg?raw=true" class="d-block hover-opacity-50">
+                        <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/petpet-week8/index-5.jpeg?raw=true" class="d-block rounded w-100 display-link-img" alt="...">
+                    </a>
+                </li>
+                <li class="list-group-item p-0 pr-lg-2 pr-1 border-0 col-lg-2 col-3">
+                    <a href="https://github.com/hexschool/webLayoutTraining1st/blob/master/petpet-week8/detail-1.jpeg?raw=true" class="d-block hover-opacity-50">
+                        <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/petpet-week8/detail-1.jpeg?raw=true" class="d-block rounded w-100 display-link-img" alt="...">
+                    </a>
+                </li>
+                <li class="list-group-item p-0 border-0 col-lg-2 col-3">
+                    <a href="https://github.com/hexschool/webLayoutTraining1st/blob/master/petpet-week8/detail2.jpeg?raw=true" class="d-block hover-opacity-50">
+                        <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/petpet-week8/detail2.jpeg?raw=true" class="d-block rounded w-100 display-link-img" alt="...">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- 店家詳細介紹 -->
+        <section class="col-lg-6 offset-lg-6 col-md-7 pt-lg-17 order-1">
+            <ul class="list-unstyled">
+                <li class="mb-lg-10 mb-md-7 mb-5">
+                    <h3 class="h5 text-primary mb-3">關於</h3>
+                    <p class="text-lg-lg text-base font-weight-medium text-primary">家中有5隻貓寶貝，對貓咪有瘋狂的熱愛 。<br>目前已經照顧超過30位狗狗貓咪朋友！對於我來說，能夠與你們相遇都是緣分！</p>
+                </li>
+                <li class="mb-lg-10 mb-md-7 mb-5">
+                    <h3 class="h5 text-primary mb-3">經歷</h3>
+                    <p class="text-lg-lg text-base font-weight-medium text-primary">曾接手過數次奶貓，照顧後送養成功，目前都是健健康康的毛孩。</p>
+                </li>
+                <li class="mb-lg-10 mb-md-7 mb-5">
+                    <h3 class="h5 text-primary mb-3">技能證照</h3>
+                    <p class="text-lg-lg text-base font-weight-medium text-primary">寵物美容丙級技術證</p>
+                </li>
+                <li class="mb-lg-10 mb-md-7 mb-5">
+                    <h3 class="h5 text-primary mb-3">提供</h3>
+                    <p class="text-lg-lg text-base font-weight-medium text-primary">貓砂盆、罐頭、乾飼料</p>
+                </li>
+                <li class="mb-lg-10 mb-md-7 mb-5">
+                    <h3 class="h5 text-primary mb-3">毛孩活動範圍</h3>
+                    <p class="text-lg-lg text-base font-weight-medium text-primary">想去的任何地方</p>
+                </li>
+                <li class="mb-lg-10 mb-md-7 mb-5">
+                    <h3 class="h5 text-primary mb-3">服務地區</h3>
+                    <p class="text-lg-lg text-base font-weight-medium text-primary">高雄市</p>
+                </li>
+            </ul>
+        </section>
+        <!-- 飼主評論 -->
+        <section class="col-lg-6 offset-lg-6 col-12 mb-lg-16 mb-md-14 mb-10 order-1">
+            <h2 class="h4 text-primary mb-6">飼主評論（30）</h2>
+            <ul class="row list-unstyled mb-0">
+                <li class="col-md-6 col-12 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body d-flex align-items-center pr-2">
+                            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/petpet-week8/person-4.png?raw=true" alt="" class="d-block">
+                            <div class="pl-5">
+                                <div class="d-flex align-items-center flex-wrap mb-2">
+                                    <h3 class="text-primary font-weight-normal text-base mr-2 mb-0">葉子</h3>
+                                    <p class="text-gray text-sm mb-0">Oct 17 2020</p>
+                                </div>
+                                <p class="text-secondary mb-1">
+                                    <span class="material-icons">grade</span>
+                                    <span class="material-icons">grade</span>
+                                    <span class="material-icons">grade</span>
+                                    <span class="material-icons">grade</span>
+                                    <span class="material-icons">grade</span>
+                                </p>
+                                <p class="text-primary mb-0">服務很秋！</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-md-6 col-12 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body d-flex align-items-center pr-2">
+                            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/petpet-week8/person-5.png?raw=true" alt="" class="d-block">
+                            <div class="pl-5">
+                                <div class="d-flex align-items-center flex-wrap mb-2">
+                                    <h3 class="text-primary font-weight-normal text-base mr-2 mb-0">Joanne</h3>
+                                    <p class="text-gray text-sm mb-0">Oct 17 2020</p>
+                                </div>
+                                <p class="text-secondary mb-1">
+                                    <span class="material-icons">grade</span>
+                                    <span class="material-icons">grade</span>
+                                    <span class="material-icons">grade</span>
+                                    <span class="material-icons">grade</span>
+                                    <span class="material-icons">grade</span>
+                                </p>
+                                <p class="text-primary mb-0">貓完全不想回家了。</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-md-6 col-12 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body d-flex align-items-center pr-2">
+                            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/petpet-week8/person-6.png?raw=true" alt="" class="d-block">
+                            <div class="pl-5">
+                                <div class="d-flex align-items-center flex-wrap mb-2">
+                                    <h3 class="text-primary font-weight-normal text-base mr-2 mb-0">Ray</h3>
+                                    <p class="text-gray text-sm mb-0">Oct 17 2020</p>
+                                </div>
+                                <p class="text-secondary mb-1">
+                                    <span class="material-icons">grade</span>
+                                    <span class="material-icons">grade</span>
+                                    <span class="material-icons">grade</span>
+                                    <span class="material-icons">grade</span>
+                                    <span class="material-icons">grade</span>
+                                </p>
+                                <p class="text-primary mb-0">超喜歡超棒超讚的...</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-md-6 col-12 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body d-flex align-items-center pr-2">
+                            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/petpet-week8/person-7.png?raw=true" alt="" class="d-block">
+                            <div class="pl-5">
+                                <div class="d-flex align-items-center flex-wrap mb-2">
+                                    <h3 class="text-primary font-weight-normal text-base mr-2 mb-0">穎旻</h3>
+                                    <p class="text-gray text-sm mb-0">Oct 17 2020</p>
+                                </div>
+                                <p class="text-secondary mb-1">
+                                    <span class="material-icons">grade</span>
+                                    <span class="material-icons">grade</span>
+                                    <span class="material-icons">grade</span>
+                                    <span class="material-icons">grade</span>
+                                    <span class="material-icons">grade</span>
+                                </p>
+                                <p class="text-primary mb-0">下次還會麻煩您～</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-md-6 col-12 mb-5 mb-md-2">
+                    <div class="card h-100">
+                        <div class="card-body d-flex align-items-center pr-2">
+                            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/petpet-week8/person-8.png?raw=true" alt="" class="d-block">
+                            <div class="pl-5">
+                                <div class="d-flex align-items-center flex-wrap mb-2">
+                                    <h3 class="text-primary font-weight-normal text-base mr-2 mb-0">俊儀</h3>
+                                    <p class="text-gray text-sm mb-0">Oct 17 2020</p>
+                                </div>
+                                <p class="text-secondary mb-1">
+                                    <span class="material-icons">grade</span>
+                                    <span class="material-icons">grade</span>
+                                    <span class="material-icons">grade</span>
+                                    <span class="material-icons">grade</span>
+                                    <span class="material-icons">grade</span>
+                                </p>
+                                <p class="text-primary mb-0">讚的！</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-md-6 col-12 mb-2">
+                    <div class="card h-100">
+                        <div class="card-body d-flex align-items-center pr-2">
+                            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/petpet-week8/person-9.png?raw=true" alt="" class="d-block">
+                            <div class="pl-5">
+                                <div class="d-flex align-items-center flex-wrap mb-2">
+                                    <h3 class="text-primary font-weight-normal text-base mr-2 mb-0">子琪</h3>
+                                    <p class="text-gray text-sm mb-0">Oct 17 2020</p>
+                                </div>
+                                <p class="text-secondary mb-1">
+                                    <span class="material-icons">grade</span>
+                                    <span class="material-icons">grade</span>
+                                    <span class="material-icons">grade</span>
+                                    <span class="material-icons">grade</span>
+                                    <span class="material-icons">grade</span>
+                                </p>
+                                <p class="text-primary mb-0">服務很棒耶哈哈哈！</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <a href="#" class="text-lg font-weight-medium d-block text-right">查看更多</a>
+        </section>
+        <!-- 其他寵物保姆 -->
+        <section class="col-lg-6 offset-lg-6 col-12  mb-lg-16 mb-14 order-1">
+            <h2 class="h3 text-primary mb-6">其他 <a href="#" class="text-primary-light">高雄市</a> <a href="hotelList.html" class="text-primary-light">寄宿</a> 的 寵物保姆</h2>
+            <ul class="row list-unstyled lg-no-gutters">
+                <li class="col-md-4 col-6 mb-lg-2 mb-md-4 mb-3 pr-lg-1">
+                    <div class="card card-shadow h-100">
+                        <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/petpet-week8/homestay-2.jpeg?raw=true" style="height: 128px;">
+                        <div class="card-body bg-light pb-0 pr-2">
+                            <h3 class="text-base font-weight-normal text-primary mb-md-2 mb-1">寵屋屋</h3>
+                            <p class="text-secondary mb-0">
+                                <span class="material-icons text-lg mb-1 mb-md-2">grade</span>
+                                <span class="material-icons text-lg mb-1 mb-md-2">grade</span>
+                                <span class="material-icons text-lg mb-1 mb-md-2">grade</span>
+                                <span class="material-icons text-lg mb-1 mb-md-2">grade</span>
+                                <span class="material-icons text-lg mb-1 mb-md-2">grade</span>
+                            </p>
+                            <p class="text-sm text-primary mb-md-10 mb-5">寄宿、美容洗澡、到府保姆</p>
+                            <a href="#" class="stretched-link stretched-link-hover stretched-link-bottom-12 stretched-link-md-bottom-0"></a>
+                        </div>
+                        <div class="card-footer bg-white border-top-0 p-0 d-block d-md-none">
+                            <div class="row no-gutters">
+                                <div class="col-6">
+                                    <a class="text-primary d-block py-3 text-center hover-bg-gray-200" href="#">聯繫</a>
+                                </div>
+                                <div class="col-6">
+                                    <a class="text-primary-light d-block py-3 text-center hover-bg-gray-200" href="#">預約</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-md-4 col-6 mb-lg-2 mb-md-4 mb-3 pr-lg-1">
+                    <div class="card card-shadow h-100">
+                        <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/petpet-week8/homestay-6.jpeg?raw=true" style="height: 128px;">
+                        <div class="card-body bg-light pb-0 pr-2">
+                            <h3 class="text-base font-weight-normal text-primary mb-md-2 mb-1">汪汪隊</h3>
+                            <p class="text-secondary mb-0">
+                                <span class="material-icons text-lg mb-1 mb-md-2">grade</span>
+                                <span class="material-icons text-lg mb-1 mb-md-2">grade</span>
+                                <span class="material-icons text-lg mb-1 mb-md-2">grade</span>
+                                <span class="material-icons text-lg mb-1 mb-md-2">grade</span>
+                                <span class="material-icons text-lg mb-1 mb-md-2">grade</span>
+                            </p>
+                            <p class="text-sm text-primary mb-md-10 mb-5">寄宿、到府保姆、寵物行為訓練</p>
+                            <a href="#" class="stretched-link stretched-link-hover stretched-link-bottom-12 stretched-link-md-bottom-0"></a>
+                        </div>
+                        <div class="card-footer bg-white border-top-0 p-0 d-block d-md-none">
+                            <div class="row no-gutters">
+                                <div class="col-6">
+                                    <a class="text-primary d-block py-3 text-center hover-bg-gray-200" href="#">聯繫</a>
+                                </div>
+                                <div class="col-6">
+                                    <a class="text-primary-light d-block py-3 text-center hover-bg-gray-200" href="#">預約</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-md-4 col-6 mb-lg-2 mb-md-4 mb-3 pr-lg-1">
+                    <div class="card card-shadow h-100">
+                        <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/petpet-week8/homestay-8.jpeg?raw=true" style="height: 128px;">
+                        <div class="card-body bg-light pb-0 pr-2">
+                            <h3 class="text-base font-weight-normal text-primary mb-md-2 mb-1">萌寵底家</h3>
+                            <p class="text-secondary mb-0">
+                                <span class="material-icons text-lg mb-1 mb-md-2">grade</span>
+                                <span class="material-icons text-lg mb-1 mb-md-2">grade</span>
+                                <span class="material-icons text-lg mb-1 mb-md-2">grade</span>
+                                <span class="material-icons text-lg mb-1 mb-md-2">grade</span>
+                                <span class="material-icons text-lg mb-1 mb-md-2">grade</span>
+                            </p>
+                            <p class="text-sm text-primary mb-md-10 mb-5">寄宿、到府保姆</p>
+                            <a href="#" class="stretched-link stretched-link-hover stretched-link-bottom-12 stretched-link-md-bottom-0"></a>
+                        </div>
+                        <div class="card-footer bg-white border-top-0 p-0 d-block d-md-none">
+                            <div class="row no-gutters">
+                                <div class="col-6">
+                                    <a class="text-primary d-block py-3 text-center hover-bg-gray-200" href="#">聯繫</a>
+                                </div>
+                                <div class="col-6">
+                                    <a class="text-primary-light d-block py-3 text-center hover-bg-gray-200" href="#">預約</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-md-4 col-6 mb-lg-2 mb-md-4 mb-3 pr-lg-1">
+                    <div class="card card-shadow h-100">
+                        <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/petpet-week8/homestay-4.jpeg?raw=true" style="height: 128px;">
+                        <div class="card-body bg-light pb-0 pr-2">
+                            <h3 class="text-base font-weight-normal text-primary mb-md-2 mb-1">妖貓X僕SS</h3>
+                            <p class="text-secondary mb-0">
+                                <span class="material-icons text-lg mb-1 mb-md-2">grade</span>
+                                <span class="material-icons text-lg mb-1 mb-md-2">grade</span>
+                                <span class="material-icons text-lg mb-1 mb-md-2">grade</span>
+                                <span class="material-icons text-lg mb-1 mb-md-2">grade</span>
+                                <span class="material-icons text-lg mb-1 mb-md-2">grade</span>
+                            </p>
+                            <p class="text-sm text-primary mb-md-10 mb-5">寄宿、美容洗澡</p>
+                            <a href="#" class="stretched-link stretched-link-hover stretched-link-bottom-12 stretched-link-md-bottom-0"></a>
+                        </div>
+                        <div class="card-footer bg-white border-top-0 p-0 d-block d-md-none">
+                            <div class="row no-gutters">
+                                <div class="col-6">
+                                    <a class="text-primary d-block py-3 text-center hover-bg-gray-200" href="#">聯繫</a>
+                                </div>
+                                <div class="col-6">
+                                    <a class="text-primary-light d-block py-3 text-center hover-bg-gray-200" href="#">預約</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-md-4 col-6 mb-lg-2 mb-md-4 mb-3 pr-lg-1">
+                    <div class="card card-shadow h-100">
+                        <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/petpet-week8/homestay-7.jpeg?raw=true" style="height: 128px;">
+                        <div class="card-body bg-light pb-0 pr-2">
+                            <h3 class="text-base font-weight-normal text-primary mb-md-2 mb-1">卯咪</h3>
+                            <p class="text-secondary mb-0">
+                                <span class="material-icons text-lg mb-1 mb-md-2">grade</span>
+                                <span class="material-icons text-lg mb-1 mb-md-2">grade</span>
+                                <span class="material-icons text-lg mb-1 mb-md-2">grade</span>
+                                <span class="material-icons text-lg mb-1 mb-md-2">grade</span>
+                                <span class="material-icons text-lg mb-1 mb-md-2">grade</span>
+                            </p>
+                            <p class="text-sm text-primary mb-md-10 mb-5">寄宿、寵物行為訓練</p>
+                            <a href="#" class="stretched-link stretched-link-hover stretched-link-bottom-12 stretched-link-md-bottom-0"></a>
+                        </div>
+                        <div class="card-footer bg-white border-top-0 p-0 d-block d-md-none">
+                            <div class="row no-gutters">
+                                <div class="col-6">
+                                    <a class="text-primary d-block py-3 text-center hover-bg-gray-200" href="#">聯繫</a>
+                                </div>
+                                <div class="col-6">
+                                    <a class="text-primary-light d-block py-3 text-center hover-bg-gray-200" href="#">預約</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-md-4 col-6 mb-lg-2 mb-md-4 mb-3 pr-lg-1">
+                    <div class="card card-shadow h-100">
+                        <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/petpet-week8/homestay-5.jpeg?raw=true" style="height: 128px;">
+                        <div class="card-body bg-light pb-0 pr-2">
+                            <h3 class="text-base font-weight-normal text-primary mb-md-2 mb-1">貓是主我是僕</h3>
+                            <p class="text-secondary mb-0">
+                                <span class="material-icons text-lg mb-1 mb-md-2">grade</span>
+                                <span class="material-icons text-lg mb-1 mb-md-2">grade</span>
+                                <span class="material-icons text-lg mb-1 mb-md-2">grade</span>
+                                <span class="material-icons text-lg mb-1 mb-md-2">grade</span>
+                                <span class="material-icons text-lg mb-1 mb-md-2">grade</span>
+                            </p>
+                            <p class="text-sm text-primary mb-md-10 mb-5">寄宿、美容洗澡、到府保姆</p>
+                            <a href="#" class="stretched-link stretched-link-hover stretched-link-bottom-12 stretched-link-md-bottom-0"></a>
+                        </div>
+                        <div class="card-footer bg-white border-top-0 p-0 d-block d-md-none">
+                            <div class="row no-gutters">
+                                <div class="col-6">
+                                    <a class="text-primary d-block py-3 text-center hover-bg-gray-200" href="#">聯繫</a>
+                                </div>
+                                <div class="col-6">
+                                    <a class="text-primary-light d-block py-3 text-center hover-bg-gray-200" href="#">預約</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+</main>
+
+    <!-- 輸入Email尋求幫助 -->
+<section class="bg-secondary py-9">
+    <div class="container">
+        <h2 class="text-primary mb-3 mb-md-2 text-xl text-md-4xl">有任何我們能幫助您的嗎？</h2>
+        <p class="lead text-primary mb-4 text-base text-md-lg">輸入電子信箱<br>將有專業人員在線幫您解決所有問題</p>
+        <div class="row">
+            <div class="col-lg-6 col-md-9">
+                <div class="input-group">
+                    <input type="email" class="form-control h-auto" placeholder="example@gmail.com" aria-describedby="btnSendEmail">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary-light py-3 px-15" type="button" id="btnSendEmail">送出</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="container pt-md-14 pt-2 pb-md-7 pb-6">
+    <div class="row">
+        <div class="col-md-3">
+            <h2 class="mb-0 mb-md-6"><a href="index.html" class="logo">PETPET</a></h1>
+            <ul class="list-unstyled d-none d-md-block">
+                <li class="mb-6"><a href="#">關於我們</a></li>
+                <li class="mb-6"><a href="#">幫助中心</a></li>
+                <li class="mb-6"><a href="#">使用條款</a></li>
+                <li class="mb-6"><a href="#">隱私政策</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3 d-none d-md-block">
+            <h2 class="h6 text-primary pt-3 mb-9">寵物服務</h2>
+            <ul class="list-unstyled">
+                <li class="mb-6"><a href="#">寵物寄宿</a></li>
+                <li class="mb-6"><a href="#">寵物到府保姆</a></li>
+                <li class="mb-6"><a href="#">寵物美容洗澡</a></li>
+                <li class="mb-6"><a href="#">寵物行為訓練</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3 d-none d-md-block">
+            <h2 class="h6 text-primary pt-3 mb-9">加入我們</h2>
+            <ul class="list-unstyled">
+                <li class="mb-6"><a href="#">成為寵物保姆</a></li>
+                <li class="mb-6"><a href="#">加入寵物計程車</a></li>
+                <li class="mb-6"><a href="#">專屬 APP 下載</a></li>
+                <li class="mb-6"><a href="#">相關合約條款</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3 d-none d-md-block">
+            <h2 class="h6 text-primary pt-3 mb-9">聯繫我們</h2>
+            <ul class="list-unstyled">
+                <li class="mb-6"><a href="mailto:petpet@petmail.com">petpet@petmail.com</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="d-flex justify-content-between pt-0 pt-md-16">
+        <a class="text-lg font-weight-medium d-none d-md-block" href="tel:+886071234567">
+            <span class="material-icons align-text-top mr-2">local_phone</span>
+            07-123-4567
+        </a>
+        <p class="text-sm font-weight-medium text-primary mb-0">Copyright © 2020 PetPet. All rights reserved.</p>
+    </div>
+</footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>

@@ -15132,6 +15132,21 @@ a.text-gray:hover, a.text-gray:focus {
   opacity: 0;
 }
 
+.stretched-link-bottom-12::after {
+  bottom: 48px;
+}
+
+@media (min-width: 768px) {
+  .stretched-link-md-bottom-0::after {
+    bottom: 0;
+  }
+}
+
+.stretched-link-hover:hover::after {
+  background: #000;
+  opacity: 0.1;
+}
+
 .rounded-bottom-0 {
   border-bottom-right-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
@@ -15139,6 +15154,30 @@ a.text-gray:hover, a.text-gray:focus {
 
 .hover-bg-gray-200:hover {
   background: #e9ecef;
+}
+
+.hover-opacity-50:hover {
+  opacity: 0.5;
+}
+
+@media (min-width: 992px) {
+  .lg-sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .lg-no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .lg-no-gutters > .col,
+  .lg-no-gutters > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 /* 全域 border box */
@@ -15295,6 +15334,38 @@ a:hover {
 @media (min-width: 992px) {
   .reserved-block-half {
     height: 173px;
+  }
+}
+
+.display-board {
+  height: 282px;
+}
+
+@media (min-width: 768px) {
+  .display-board {
+    height: 221px;
+  }
+}
+
+@media (min-width: 992px) {
+  .display-board {
+    height: 440px;
+  }
+}
+
+.display-link-img {
+  height: 82px;
+}
+
+@media (min-width: 768px) {
+  .display-link-img {
+    height: 63px;
+  }
+}
+
+@media (min-width: 992px) {
+  .display-link-img {
+    height: 96px;
   }
 }
 

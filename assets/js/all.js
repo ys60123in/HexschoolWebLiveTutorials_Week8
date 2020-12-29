@@ -22,14 +22,18 @@ $(function () {
   var tomorrowDateString = tomorrow.getFullYear() + "/" + paddingLeft(String(tomorrow.getMonth() + 1), 2) + "/" + paddingLeft(String(tomorrow.getDate()), 2);
   $("#inputFromDate").val(todayDateString);
   $("#inputToDate").val(tomorrowDateString);
+  $("#linkListPetPhotos a").on("click", function () {
+    $(".display-board").attr("src", $(this).attr('href'));
+    return false;
+  });
 });
 var swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
   spaceBetween: 30,
   // Responsive breakpoints
   breakpoints: {
-    // when window width is >= 767px
-    767: {
+    // when window width is >= 768px
+    768: {
       slidesPerView: 3,
       spaceBetweenSlides: 30
     }
