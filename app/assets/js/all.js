@@ -36,7 +36,7 @@ $(function() {
     //提示帳號是否輸入
     if($("#inputAccout").val() === ""){
       $("#accountHelp").removeClass("d-none");
-      return;
+      return false;
     }
     else{
       $("#accountHelp").addClass("d-none");
@@ -45,7 +45,7 @@ $(function() {
     //提示密碼是否輸入
     if($("#inputPassword").val() === ""){
       $("#passwordHelp").removeClass("d-none");
-      return;
+      return false;
     }
     else{
       $("#passwordHelp").addClass("d-none");
