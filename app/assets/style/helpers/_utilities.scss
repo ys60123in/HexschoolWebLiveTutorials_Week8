@@ -98,6 +98,15 @@
     opacity: 0;
 }
 
+.stretched-link-bottom-12::after{
+    bottom: 48px;
+}
+
+.stretched-link-hover:hover::after{
+    background: #000;
+    opacity: 0.1;
+}
+
 .rounded-bottom-0{
     border-bottom-right-radius: 0 !important;
     border-bottom-left-radius: 0 !important;
