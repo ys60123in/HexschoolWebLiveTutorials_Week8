@@ -29,8 +29,8 @@ var swiper = new Swiper('.swiper-container', {
   spaceBetween: 30,
   // Responsive breakpoints
   breakpoints: {
-    // when window width is >= 767px
-    767: {
+    // when window width is >= 768px
+    768: {
         slidesPerView: 3,
         spaceBetweenSlides: 30
     }
