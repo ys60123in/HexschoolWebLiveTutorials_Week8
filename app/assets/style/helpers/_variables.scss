@@ -86,7 +86,8 @@ $theme-colors: map-merge(
     "danger":           $danger,
     "light":            $light,
     "dark":             $dark,
-    "gray":             $gray-600
+    "gray":             $gray-600,
+    "gray-light":       $gray-400
   ),
   $theme-colors
 );
