@@ -18,9 +18,10 @@
     
     <%- contents %>
 
-    <%- include("layout/help.ejs"); %>
-
-    <%- include("layout/footer.ejs"); %>
+    <% if (footer) { %>
+      <%- include("layout/help.ejs"); %>
+      <%- include("layout/footer.ejs"); %>
+    <% } %>
 
     <script src="./assets/js/vendors.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
