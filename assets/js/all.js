@@ -26,6 +26,27 @@ $(function () {
     $(".display-board").attr("src", $(this).attr('href'));
     return false;
   });
+  $("#inputAccout").on("blur", showLoginPrompt);
+  $("#inputPassword").on("blur", showLoginPrompt);
+  $("#btnLoginSubmit").on("click", showLoginPrompt);
+
+  function showLoginPrompt() {
+    //提示帳號是否輸入
+    if ($("#inputAccout").val() === "") {
+      $("#accountHelp").removeClass("d-none");
+      return false;
+    } else {
+      $("#accountHelp").addClass("d-none");
+    } //提示密碼是否輸入
+
+
+    if ($("#inputPassword").val() === "") {
+      $("#passwordHelp").removeClass("d-none");
+      return false;
+    } else {
+      $("#passwordHelp").addClass("d-none");
+    }
+  }
 });
 var swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
