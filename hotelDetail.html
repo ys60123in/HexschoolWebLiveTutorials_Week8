@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
@@ -24,7 +26,7 @@
         <div class="collapse navbar-collapse" id="navbarMainMenu">
             <ul class="navbar-nav w-100 align-items-center justify-content-md-end">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">預約服務</a>
+                    <a class="nav-link" href="hotelList.html">預約服務</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">成為寵物保姆</a>
@@ -43,7 +45,7 @@
 <main class="container">
     <div class="row">
         <!-- 店家資訊 -->
-        <section class="col-lg-6 col-md-7 order-md-0 order-1 lg-sticky-top pt-lg-16 pt-md-14 pt-10 mb-lg-16 mb-md-14 mb-10">
+        <section class="col-lg-6 col-md-7 order-md-0 order-1 lg-sticky-top pt-lg-16 pt-md-14 pt-10 mb-lg-16 mb-md-14 mb-10" data-aos="fade-right">
             <div class="d-flex align-items-center mb-4">
                 <h2 class="h3 text-primary mr-4">毛孩好家</h2>
                 <p class="text-secondary mb-0">
@@ -78,12 +80,12 @@
                     <a href="#" class="btn btn-outline-primary-light d-block text-lg">聯繫</a>
                 </div>
                 <div class="col-lg-6 col-md-5 col-6">
-                    <a href="#" class="btn btn-primary-light d-block text-lg">立刻預約</a>
+                    <a href="#" class="btn btn-primary-light d-block text-lg" id="btnModalReserveItems">立刻預約</a>
                 </div>
             </div>
         </section>
         <!-- 店家相片展示 -->
-        <section class="col-lg-6 col-md-5 pt-lg-16 pt-md-14 pt-10">
+        <section class="col-lg-6 col-md-5 pt-lg-16 pt-md-14 pt-10" data-aos="fade-left">
             <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/petpet-week8/homestay-3.jpeg?raw=true" class="display-board w-100 rounded mb-2 mb-md-3" alt="...">
             <ul id="linkListPetPhotos" class="list-group list-group-horizontal row no-gutters">
                 <li class="list-group-item p-0 pr-lg-2 pr-1 border-0 col-lg-2 col-3">
@@ -441,6 +443,39 @@
     </div>
 </main>
 
+<!-- Modal 預約項目 -->
+<div class="modal fade" id="reserveItemsModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+
+        </div>
+    </div>
+</div>
+<!-- Modal 預約資訊 -->
+<div class="modal fade" id="reserveInfoModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+
+        </div>
+    </div>
+</div>
+<!-- Modal 付款資訊 -->
+<div class="modal fade" id="paymentInfoModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+
+        </div>
+    </div>
+</div>
+<!-- Modal 完成預約 -->
+<div class="modal fade" id="reserveSuccessModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+
+        </div>
+    </div>
+</div>
+
     
       <!-- 輸入Email尋求幫助 -->
 <section class="bg-secondary py-9">
@@ -508,6 +543,7 @@
     <script src="./assets/js/vendors.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
 
