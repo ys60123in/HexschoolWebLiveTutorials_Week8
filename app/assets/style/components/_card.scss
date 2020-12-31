@@ -5,3 +5,25 @@
 .card-photo{
     margin-top: -50px;
 }
+
+.checkbox-with-card{
+    & ~ label{
+        .card{
+            border-color: transparent;
+            .checkbox-card-icon, .checkbox-card-text{
+                color: #888888;
+            }
+        }
+    }
+    &:checked ~ label{
+        .card{
+            border-color: $primary-light;
+            .checkbox-card-icon{
+                color: $secondary;
+            }
+            .checkbox-card-text{
+                color: $primary;
+            }
+        }
+    }
+}
