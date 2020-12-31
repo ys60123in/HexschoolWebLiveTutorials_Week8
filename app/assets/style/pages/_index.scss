@@ -1,0 +1,40 @@
+.banner{
+    width: 100%;
+    height: 352px;
+    @include pad{
+        width: 210px;
+        height: 288px;
+    }
+    @include pc{
+        width: 41.6667%;
+        height: 736px;
+    }
+}
+
+.header-search-block{
+    position: relative;
+    @include pc{
+        position: absolute;
+        top: 256px;
+    }
+}
+
+.reserved-block{
+    height: 132px;
+    @include pad{
+        height: 210px;
+    }
+    @include pc{
+        height: 350px;
+    }
+}
+
+.reserved-block-half{
+    height: 132px;
+    @include pad{
+        height: 103px;
+    }
+    @include pc{
+        height: 173px;
+    }
+}

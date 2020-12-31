@@ -1,0 +1,162 @@
+/*Material Icons*/
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+/*font-family*/
+//Roboto
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+//Noto Sans CJK TC
+@font-face {
+    font-family: "Noto Sans CJK TC";
+    src: url(vendors/fonts/NotoSansCJKtc/NotoSansCJKtc-Light.otf) format("opentype");
+    font-weight: $font-weight-light;
+    unicode-range: U+4E00-9FFF;
+}
+@font-face {
+    font-family: "Noto Sans CJK TC";
+    src: url(vendors/fonts/NotoSansCJKtc/NotoSansCJKtc-Regular.otf) format("opentype");
+    font-weight: $font-weight-normal;
+    unicode-range: U+4E00-9FFF;
+}
+@font-face {
+    font-family: "Noto Sans CJK TC";
+    src: url(vendors/fonts/NotoSansCJKtc/NotoSansCJKtc-Medium.otf) format("opentype");
+    font-weight: $font-weight-medium;
+    unicode-range: U+4E00-9FFF;
+}
+@font-face {
+    font-family: "Noto Sans CJK TC";
+    src: url(vendors/fonts/NotoSansCJKtc/NotoSansCJKtc-Bold.otf) format("opentype");
+    font-weight: $font-weight-bold;
+    unicode-range: U+4E00-9FFF;
+}
+
+/* font-size */
+//參考 https://github.com/chiayutsai/perfume/blob/main/app/assets/style/helpers/_text.scss 新增
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @each $size, $value in $font-size {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+            .text#{$infix}-#{$size} {
+                font-size: $value !important;
+            }
+        }
+    }
+}
+
+.outline-0{
+    outline: none;
+    &:focus{
+        outline: none;
+    }
+}
+
+.left-0{
+    left: 0;
+}
+.right-0{
+    right: 0;
+}
+.top-0{
+    top: 0;
+}
+.bottom-0{
+    bottom: 0;
+}
+
+.text-prompt{
+    color: #A5A5A5;
+}
+
+// Weight and italics
+
+.font-weight-thin       { font-weight: $font-weight-thin !important; }
+.font-weight-ultralight { font-weight: $font-weight-ultralight !important; }
+.font-weight-medium     { font-weight: $font-weight-medium !important; }
+.font-weight-semibold   { font-weight: $font-weight-semibold !important; }
+.font-weight-black      { font-weight: $font-weight-black !important; }
+
+.text-decoration-line-through { text-decoration: line-through !important; }
+
+.border-width-2{
+    border-width: 2px !important;
+}
+.border-width-3{
+    border-width: 3px !important;
+}
+.border-width-5{
+    border-width: 5px !important;
+}
+
+.z-1{
+    z-index: 1;
+}
+
+.stretched-link-extension::after{
+    background: #000;
+    opacity: 0.4;
+    z-index: -1;
+}
+.stretched-link-extension:hover::after{
+    opacity: 0;
+}
+
+.stretched-link-bottom-12::after{
+    bottom: 48px;
+}
+
+.stretched-link-md-bottom-0::after{
+    @include pad{
+        bottom: 0;
+    }
+}
+
+.stretched-link-hover:hover::after{
+    background: #000;
+    opacity: 0.1;
+}
+
+.rounded-bottom-0{
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+.hover-bg-gray-200:hover{
+    background: $gray-200;
+}
+
+.hover-opacity-50:hover{
+    opacity: 0.5;
+}
+
+.lg-sticky-top{
+    @include pc{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+}
+
+.lg-no-gutters {
+    @include pc{
+        margin-right: 0;
+        margin-left: 0;
+      
+        > .col,
+        > [class*="col-"] {
+          padding-right: 0;
+          padding-left: 0;
+        }
+    }
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.lg-position-right{
+    @include pc{
+        position: absolute;
+        right: 0;
+    }
+}

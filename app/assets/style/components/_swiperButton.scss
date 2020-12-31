@@ -1,0 +1,15 @@
+.swiper-button-prev::after, .swiper-button-next::after{
+    content: "";
+}
+
+.swiper-button{
+    height: 44px;
+    width: 44px;
+}
+
+.swiper-button-next-position{
+    right: 4px;
+    @include pad{
+        right: -22px;
+    }
+}

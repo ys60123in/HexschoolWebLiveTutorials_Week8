@@ -1,0 +1,12 @@
+.login-form-block{
+    position: relative;
+    margin: 60px auto 120px;
+    @include pad{
+        margin: 180px auto;
+    }
+    @include pc{
+        position: absolute;
+        top: 25vh;
+        margin: 0 auto;
+    }
+}

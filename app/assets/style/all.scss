@@ -1,3 +1,19 @@
 @import "functions";
 @import "./helpers/variables";
 @import "bootstrap";
+
+@import "helpers/mixins";
+@import "helpers/utilities";
+@import "base/base";
+@import "layout/mainMenu";
+@import "components/nav";
+@import "components/navbar";
+@import "components/card";
+@import "components/swiperButton";
+@import "components/forms";
+@import "components/modal";
+@import "components/time-line";
+@import "pages/index";
+@import "pages/hotelDetail";
+@import "pages/login";
+@import "pages/profile";
