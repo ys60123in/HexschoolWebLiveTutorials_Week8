@@ -1,0 +1,155 @@
+<div class="modal-body pt-md-14 pb-md-11 px-lg-8 px-md-14">
+    <div class="container-fluid px-0">
+        <div class="row">
+            <div class="col-lg-8 order-1">
+                <h2 class="h5 text-primary mb-lg-8 mb-md-6 mb-3">預約項目</h2>
+            </div>
+            <div class="col-lg-4 lg-position-right mb-5 mb-lg-0 d-flex flex-lg-column align-items-lg-start align-items-center order-1">
+                <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/petpet-week8/homestay-3.jpeg?raw=true" alt="" class="rounded modal-main-photo mb-lg-2 mb-0 mr-lg-0 mr-md-7 mr-3">
+                <div>
+                    <div class="d-flex align-items-center flex-wrap mb-0 mb-md-2">
+                        <h2 class="h6 text-primary mr-3 mb-0">毛孩好家</h2>
+                        <p class="text-secondary mb-0">
+                            <span class="material-icons">grade</span>
+                            <span class="material-icons">grade</span>
+                            <span class="material-icons">grade</span>
+                            <span class="material-icons">grade</span>
+                            <span class="material-icons">grade</span>
+                        </p>
+                    </div>
+                    <div class="d-flex">
+                        <p class="mb-0 text-primary-light mr-3"><span class="material-icons">location_on</span></p>
+                        <p class="text-primary mb-0">高雄市苓雅區、新興區、前鎮區</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 order-1">
+                <!-- 預約項目勾選區塊 -->
+                <ul class="row list-unstyled no-gutters mb-md-7 mb-6">
+                    <li class="col-3 pr-md-3 pr-1">
+                        <input type="checkbox" name="hotel" id="checkboxHotel" class="d-none checkbox-with-card" checked="checked">
+                        <label for="checkboxHotel" class="w-100 h-100 cursor-pointer">
+                            <div class="card card-shadow border-width-3 h-100">
+                                <div class="card-body py-md-6 py-3 d-flex flex-column align-items-center justify-content-center">
+                                    <span class="checkbox-card-icon material-icons d-block text-md-5xl text-xl mb-md-1 mb-0">house</span>
+                                    <p class="checkbox-card-text mb-0 text-md-lg text-base text-center">寄宿</p>
+                                </div>
+                            </div>
+                        </label>
+                    </li>
+                    <li class="col-3 pr-md-3 pr-1">
+                        <input type="checkbox" name="Beauty" id="checkboxBeauty" class="d-none checkbox-with-card">
+                        <label for="checkboxBeauty" class="w-100 h-100 cursor-pointer">
+                            <div class="card card-shadow border-width-3 h-100">
+                                <div class="card-body py-md-6 py-3 d-flex flex-column align-items-center justify-content-center">
+                                    <span class="checkbox-card-icon material-icons d-block text-md-5xl text-xl mb-md-1 mb-0">wash</span>
+                                    <p class="checkbox-card-text mb-0 text-md-lg text-base text-center">美容</p>
+                                </div>
+                            </div>
+                        </label>
+                    </li>
+                    <li class="col-3 pr-md-3 pr-1">
+                        <input type="checkbox" name="homeSitter" id="checkboxHomeSitter" class="d-none checkbox-with-card">
+                        <label for="checkboxHomeSitter" class="w-100 h-100 cursor-pointer">
+                            <div class="card card-shadow border-width-3 h-100">
+                                <div class="card-body py-md-6 py-3 d-flex flex-column align-items-center justify-content-center">
+                                    <span class="checkbox-card-icon material-icons d-block text-md-5xl text-xl mb-md-1 mb-0">roofing</span>
+                                    <p class="checkbox-card-text mb-0 text-md-lg text-base text-center">到府保姆</p>
+                                </div>
+                            </div>
+                        </label>
+                    </li>
+                    <li class="col-3">
+                        <input type="checkbox" name="walkSitter" id="checkboxWalkSitter" class="d-none checkbox-with-card">
+                        <label for="checkboxWalkSitter" class="w-100 h-100 cursor-pointer">
+                            <div class="card card-shadow border-width-3 h-100">
+                                <div class="card-body py-md-6 py-3 d-flex flex-column align-items-center justify-content-center">
+                                    <span class="checkbox-card-icon material-icons d-block text-md-5xl text-xl mb-md-1 mb-0">directions_walk</span>
+                                    <p class="checkbox-card-text mb-0 text-md-lg text-base text-center">遛狗保姆</p>
+                                </div>
+                            </div>
+                        </label>
+                    </li>
+                </ul>
+                <!-- 日期區塊 -->
+                <div class="form-group">
+                    <h3 class="text-base font-weight-normal mb-1">選擇日期</h3>
+                    <div class="row no-gutters">
+                        <div class="col-md-6 d-flex align-items-center pr-md-2 mb-2 mb-md-0">
+                            <input type="text" name="from_date" id="inputFromDate" class="form-control pl-4 pr-2 datepicker mr-2">
+                            <p class="mb-0">至</p>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center">
+                            <input type="text" name="from_date" id="inputToDate" class="form-control pl-4 pr-2 datepicker mr-2 w-75">
+                            <p class="mb-0 w-25">共一晚</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 服務數量和寵物資訊 -->
+                <div class="row mb-lg-2 mb-md-16 mb-10">
+                    <div class="col-md-3 col-4">
+                        <h3 class="text-base font-weight-normal mb-1">毛孩數量</h3>
+                        <select name="num" id="selectNum" class="form-control pl-4 pr-2">
+                            <option value="1" selected>1隻</option>
+                            <option value="2">2隻</option>
+                            <option value="3">3隻</option>
+                            <option value="4">4隻</option>
+                            <option value="5">5隻</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 col-4">
+                        <h3 class="text-base font-weight-normal mb-1">您的毛孩是</h3>
+                        <select name="category" id="selectCategory" class="form-control pl-4 pr-2">
+                            <option value="cat" selected>貓</option>
+                            <option value="dog">狗</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 col-4">
+                        <h3 class="text-base font-weight-normal mb-1">年齡</h3>
+                        <select name="age" id="selectAge" class="form-control pl-4 pr-2">
+                            <option value="1" selected>1歲</option>
+                            <option value="2">2歲</option>
+                            <option value="3">3歲</option>
+                            <option value="4">4歲</option>
+                            <option value="5">5歲</option>
+                            <option value="6">6歲</option>
+                            <option value="7">7歲</option>
+                            <option value="8">8歲</option>
+                            <option value="9">9歲</option>
+                            <option value="10">10歲</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 pt-lg-10 mb-3 mb-md-9 mb-lg-0 order-0 order-md-1">
+                <ul class="row list-unstyled timeline-section mb-0">
+                    <li class="col-4">
+                        <div class="timeline-pointer">
+                            <h3 class="text-base mt-2">預約項目</h3>
+                        </div>
+                    </li>
+                    <li class="col-4">
+                        <div class="timeline-pointer">
+                            <h3 class="text-base font-weight-light mt-2">預約資料</h3>
+                        </div>
+                    </li>
+                    <li class="col-4">
+                        <div class="timeline-pointer">
+                            <h3 class="text-base font-weight-light mt-2">付款資訊</h3>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 order-1">
+                <div class="row no-gutters">
+                    <div class="col-lg-12 col-md-7 col-12 pr-lg-0 pr-md-7 d-flex align-items-center justify-content-lg-center justify-content-md-end justify-content-center">
+                        <a href="#" class="d-block text-primary-light mb-lg-4 mb-md-0 mb-3" data-dismiss="modal">返回</a>
+                    </div>
+                    <div class="col-lg-12 col-md-5 col-12">
+                        <button class="btn btn-primary-light text-lg w-100" id="btnModalReserveInfo">下一步</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

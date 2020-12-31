@@ -1,0 +1,30 @@
+.timeline-section {
+	position: relative;
+    display: flex;
+}
+
+.timeline-section::after {
+	content:"";
+	position: absolute;
+	left: 15px;    
+	right: 15px;
+	height: 2px; 
+	background-color: $primary-light;
+}
+
+.timeline-pointer{
+	position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.timeline-pointer::before {
+	content:"";
+	position: absolute;
+	left: 50%;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	transform: translate(50%, -25%);
+	background-color: $primary-light;
+}
