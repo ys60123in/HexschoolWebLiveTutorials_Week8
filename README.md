@@ -2,6 +2,8 @@
 
 > 使用該專案 Gulp 時，就可以不用使用其他編譯工具編譯 SCSS 或是 JavaScript 囉。
 
+## 第八週Page - [寵物寄宿網站](https://ys60123in.github.io/HexschoolWebLiveTutorials_Week8/)
+
 ## 指令列表
 
 - `gulp` - 執行開發模式(會開啟模擬瀏覽器並監聽相關檔案)
