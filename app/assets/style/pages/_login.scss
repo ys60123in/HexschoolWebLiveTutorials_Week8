@@ -1,12 +1,13 @@
 .login-form-block{
     position: relative;
     margin: 60px auto 120px;
-    @include pad{
+    @include media-breakpoint-up(md){
         margin: 180px auto;
     }
-    @include pc{
+    @include media-breakpoint-up(lg){
         position: absolute;
-        top: 25vh;
+        top: 50%;
+        transform: translateY(-50%);
         margin: 0 auto;
     }
 }

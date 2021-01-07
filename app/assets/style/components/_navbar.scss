@@ -8,7 +8,7 @@
         font-size: $font-size-lg;
         font-weight: $font-weight-medium;
     }
-    @include pad{
+    @include media-breakpoint-up(md){
         .nav-item{
             width: auto;
             border: none;

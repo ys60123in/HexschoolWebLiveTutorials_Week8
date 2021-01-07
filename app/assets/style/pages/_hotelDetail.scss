@@ -1,19 +1,19 @@
 .display-board{
     height: 282px;
-    @include pad{
+    @include media-breakpoint-up(md){
         height: 221px;
     }
-    @include pc{
+    @include media-breakpoint-up(lg){
         height: 440px;
     }
 }
 
 .display-link-img{
     height: 82px;
-    @include pad{
+    @include media-breakpoint-up(md){
         height: 63px;
     }
-    @include pc{
+    @include media-breakpoint-up(lg){
         height: 96px;
     }
 }

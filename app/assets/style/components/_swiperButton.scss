@@ -9,7 +9,7 @@
 
 .swiper-button-next-position{
     right: 4px;
-    @include pad{
+    @include media-breakpoint-up(md){
         right: -22px;
     }
 }

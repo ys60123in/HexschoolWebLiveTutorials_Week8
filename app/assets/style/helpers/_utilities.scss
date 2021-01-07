@@ -106,7 +106,7 @@
 }
 
 .stretched-link-md-bottom-0::after{
-    @include pad{
+    @include media-breakpoint-up(md){
         bottom: 0;
     }
 }
@@ -129,16 +129,16 @@
     opacity: 0.5;
 }
 
-.lg-sticky-top{
-    @include pc{
+.sticky-lg-top{
+    @include media-breakpoint-up(lg){
         position: -webkit-sticky;
         position: sticky;
         top: 0;
     }
 }
 
-.lg-no-gutters {
-    @include pc{
+.no-lg-gutters {
+    @include media-breakpoint-up(lg){
         margin-right: 0;
         margin-left: 0;
       
@@ -154,9 +154,13 @@
     cursor: pointer;
 }
 
-.lg-position-right{
-    @include pc{
+.position-lg-right{
+    @include media-breakpoint-up(lg){
         position: absolute;
         right: 0;
     }
+}
+
+.visible-region-height{
+    height: calc(100vh - 63px);
 }
